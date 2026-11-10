@@ -3,7 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315211D'/%3E%3Crect x='12' y='34' width='40' height='12' fill='%23F3D33A'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23F4F6F3'%3Em%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://mindsetdigitalstudio.com.br/assets/simbolo-512.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mindset Digital Studio">
 <meta property="og:description" content="Sistemas com IA para rotinas que conhecemos por dentro: SindicoHub, Terreiro Hub e Caixa da Casa.">
@@ -67,7 +70,8 @@ p { margin: 0; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--papel); }
 header.topo { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: color-mix(in srgb, var(--papel) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--linha); }
 .topo .miolo { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
-.logo { display: flex; align-items: baseline; gap: 6px; text-decoration: none; font-family: var(--f-display); font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em; white-space: nowrap; }
+.logo { display: flex; align-items: center; gap: 6px; text-decoration: none; font-family: var(--f-display); font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em; white-space: nowrap; }
+.logo-simbolo { flex: none; margin-right: 4px; }
 .logo span { font-family: var(--f-mono); font-weight: 400; font-size: 0.72rem; color: var(--tinta-2); letter-spacing: 0.06em; text-transform: uppercase; }
 nav.menu { display: flex; gap: 22px; align-items: center; font-size: 0.95rem; }
 nav.menu a { text-decoration: none; color: var(--tinta-2); }
@@ -195,7 +199,7 @@ footer .miolo { padding-block: 28px; display: flex; flex-wrap: wrap; justify-con
 <body>
 <header class="topo faixa">
   <div class="miolo">
-    <a class="logo" href="#inicio">mindset <span>digital studio</span></a>
+    <a class="logo" href="#inicio" aria-label="Mindset Digital Studio, início"><svg class="logo-simbolo" width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#15211D"/><path d="M17 46 V29 a7.5 7.5 0 0 1 15 0 V46 M32 29 a7.5 7.5 0 0 1 15 0 V46" fill="none" stroke="#F3D33A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="51.5" cy="14.5" r="3.6" fill="#F3D33A"/></svg>mindset <span>digital studio</span></a>
     <nav class="menu" aria-label="Seções">
       <a href="#objetivo">Objetivo</a>
       <a href="#produtos">Produtos</a>
